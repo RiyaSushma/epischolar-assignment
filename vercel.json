@@ -6,7 +6,7 @@
       "use": "@vercel/next"
     },
     {
-      "src": "backend/src/main.ts",
+      "src": "backend/package.json",
       "use": "@vercel/node",
       "config": {
         "includeFiles": ["backend/**/*.ts"]
@@ -16,7 +16,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/backend/src/main.ts"
+      "dest": "/backend/$1"
     },
     {
       "src": "/(.*)",

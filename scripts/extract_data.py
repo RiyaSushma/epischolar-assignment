@@ -1,11 +1,8 @@
 import pandas as pd
 import json
-import os
 
-dir_name = os.path.dirname(__file__)
 
-excel_file_path = os.path.join(dir_name, 'assignment data.xlsx')
-df = pd.read_excel(excel_file_path)
+df = pd.read_excel('./assignment data.xlsx')
 
 data = df.to_dict("records")
 

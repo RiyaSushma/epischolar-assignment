@@ -7,6 +7,9 @@ export class GlobeDataController {
 
     @Get()
     getData() {
-        return this.globeDataService.getData();
+        console.log('Received GET request for /globe-data');
+        const data = this.globeDataService.getData();
+        console.log('Data returned from service:', data);
+        return data;
     }
 }

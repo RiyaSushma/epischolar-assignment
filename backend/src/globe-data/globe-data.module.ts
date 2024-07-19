@@ -4,6 +4,7 @@ import { GlobeDataService } from './globe-data.service';
 
 @Module({
   controllers: [GlobeDataController],
-  providers: [GlobeDataService]
+  providers: [GlobeDataService],
+  exports: [GlobeDataService],
 })
 export class GlobeDataModule {}
