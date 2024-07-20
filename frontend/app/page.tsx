@@ -6,7 +6,7 @@ export default function Home() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/globe-data')
+    fetch('https://epischolar-assignment-6.onrender.com/globe-data')
     .then(response => response.json())
     .then(data => setData(data))
     .catch(error => console.error('Error fetching data:', error));
